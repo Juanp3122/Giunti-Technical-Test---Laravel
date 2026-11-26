@@ -62,5 +62,11 @@ Ejecuta `npm run dev` al menos una vez antes de abrir la página. Genera `public
 | `npm run watch` | Compila y vigila cambios |
 | `npm run prod` | Compila y minifica para producción |
 
+## Mejoras propuestas
+
+delegar ciertas acciones como la consulta, filtro y envío de formularios a un servicio back end con el fin de ser consumido.
+
+
+
 
 
