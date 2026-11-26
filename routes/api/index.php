@@ -1,0 +1,15 @@
+<?php
+
+// En Vercel solo /tmp es escribible
+foreach ([
+    '/tmp/storage/framework/views',
+    '/tmp/storage/framework/cache',
+    '/tmp/storage/framework/sessions',
+    '/tmp/storage/logs',
+] as $dir) {
+    if (!is_dir($dir)) {
+        mkdir($dir, 0777, true);
+    }
+}
+
+require __DIR__ . '/../public/index.php';
